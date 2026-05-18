@@ -44,6 +44,9 @@ const nextConfig: NextConfig = {
 
     return webpackConfig
   },
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
   reactStrictMode: true,
   redirects,
   turbopack: {
