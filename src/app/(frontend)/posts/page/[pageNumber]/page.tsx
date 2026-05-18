@@ -9,7 +9,8 @@ import React from 'react'
 import PageClient from './page.client'
 import { notFound } from 'next/navigation'
 
-export const revalidate = 600
+export const dynamic = 'force-dynamic'
+export const dynamicParams = true
 
 type Args = {
   params: Promise<{
