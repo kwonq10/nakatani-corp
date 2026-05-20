@@ -2,6 +2,18 @@
 const config = {
   theme: {
     extend: {
+      colors: {
+        ink: '#0a0a0c',
+        gold: '#c8a951',
+        paper: '#faf8f3',
+        sumi: '#2a2820',
+        softwhite: '#e8e6df',
+        mute: '#9a9889',
+      },
+      fontFamily: {
+        serif: ['Noto Serif JP', 'serif'],
+        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+      },
       typography: {
         DEFAULT: {
           css: [

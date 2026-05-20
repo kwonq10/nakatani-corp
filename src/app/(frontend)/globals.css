@@ -43,8 +43,9 @@
   --breakpoint-lg: 64rem;
   --breakpoint-xl: 80rem;
   --breakpoint-2xl: 86rem;
-  --font-mono: var(--font-geist-mono);
-  --font-sans: var(--font-geist-sans);
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+  --font-sans: var(--font-inter), 'Noto Sans JP', sans-serif;
+  --font-serif: var(--font-noto-serif), 'Noto Serif JP', serif;
 }
 
 @layer utilities {
@@ -210,8 +211,29 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground min-h-[100vh] flex flex-col;
+    @apply bg-white text-ink min-h-[100vh] flex flex-col;
   }
+}
+
+/* slim scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #9a9889;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a2820;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9a9889 transparent;
 }
 
 html {
