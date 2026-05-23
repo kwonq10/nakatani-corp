@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ ok: true })
   } catch (err) {
-    console.error('[POST /api/contact]', err)
+    console.error('[POST /contact/submit]', err)
     return NextResponse.json(
       { error: 'サーバーエラーが発生しました。しばらくしてから再度お試しください。' },
       { status: 500 },
