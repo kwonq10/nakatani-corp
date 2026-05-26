@@ -5,9 +5,9 @@ import React, { useState } from 'react'
 import { cn } from '@/utilities/ui'
 
 const navItems = [
-  { label: 'services', href: '#services' },
-  { label: 'works', href: '#works' },
-  { label: 'about', href: '#about' },
+  { label: 'services', href: '/services' },
+  { label: 'works', href: '/works' },
+  { label: 'about', href: '/about' },
   { label: 'contact', href: '/contact' },
 ]
 
